@@ -35,7 +35,7 @@ gulp.task('html', function() {
 
 gulp.task('shared-styles', ['sass'], function() {
   gutil.log('Reading base.css into shared styles')
-  base_css = fs.readFileSync('./css/app.css')
+  base_css = fs.readFileSync('./public/css/app.css')
   content = `<link rel="import" href="../node_modules/@bower_components/polymer/polymer-element.html">
 <link rel="stylesheet" href="../node_modules/typeface-muli/index.css">
 <dom-module id="shared-styles">
